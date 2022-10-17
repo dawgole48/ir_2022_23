@@ -1,4 +1,4 @@
 ### Informatyka 2022/23 ###
-foldery: ```data/zadanie.py```
+foldery: ```{data}/{zadanie}.py```
 
 głównie python
