@@ -1,7 +1,4 @@
-from re import S
-
-
-n = 10
+n = int(input("Podaj n: "))
 def silnia(n):
     w = 1
     if(n > 0):
