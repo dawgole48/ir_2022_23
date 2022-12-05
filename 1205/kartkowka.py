@@ -1,5 +1,3 @@
-import math
-
 def f(x):
     return (4 - (x * x))
 
@@ -13,5 +11,5 @@ for i in range(0, n):
     p1 = f(x1 + (i * h))
     p2 = f(x1 + (i + 1) * h)
     P += (p1 + p2) * h / 2
-    
+
 print(P)
