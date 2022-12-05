@@ -4,29 +4,33 @@ a.append(int(input("Podaj licznik 1. ułamka: ")))
 a.append(int(input("Podaj mianownik 1. ułamka: ")))
 b.append(int(input("Podaj licznik 2. ułamka: ")))
 b.append(int(input("Podaj mianownik 2. ułamka: ")))
-print(a[0], "/", a[1])
-print(b[0], "/", b[1])
 
-def nwd(a, b):
-    if b > 0:
-        return nwd(b, a%b)
-    else:
-        return a
+if (a[1] != 0) and (b[1] != 0):
+    print(a[0], "/", a[1])
+    print(b[0], "/", b[1])
 
-def nww(a, b):
-    return a*b / nwd(a,b)
+    def nwd(a, b):
+        if b > 0:
+            return nwd(b, a%b)
+        else:
+            return a
 
-mianownik = nww(a[1], b[1])
+    def nww(a, b):
+        return a*b / nwd(a,b)
 
-a[0] = (mianownik/a[1]) * a[0]
-b[0] = (mianownik/b[1]) * b[0]
+    mianownik = nww(a[1], b[1])
 
-print(a[0], "/", mianownik)
-print(b[0], "/", mianownik)
+    a[0] = (mianownik/a[1]) * a[0]
+    b[0] = (mianownik/b[1]) * b[0]
 
-wynik = a[0] + b[0];
-w_nwd = nwd(wynik, mianownik);
-wynik = wynik/w_nwd
-mianownik = mianownik/w_nwd
+    print(a[0], "/", mianownik)
+    print(b[0], "/", mianownik)
 
-print("wynik: ", wynik, "/", mianownik)
+    wynik = a[0] + b[0];
+    w_nwd = nwd(wynik, mianownik);
+    wynik = wynik/w_nwd
+    mianownik = mianownik/w_nwd
+
+    print("wynik: ", wynik, "/", mianownik)
+else:
+    print("Mianownik nie moze byc 0")
