@@ -14,7 +14,12 @@
 # zadanie 4.
 > Podany poniżej kod generuje 3 liczby losowe (za wartość X wstaw swój numer z dziennika):
 > 
-> {kod}
+> import random
+> random.seed(X)
+> for i in range(100):
+>     a = random.randrange(0,6)
+>     b = random.randrange(0,6)
+>     c = random.randrange(0,6)
 > 
 > Dla wylosowanych trójek licz sprawdź, czy da się z nich zbudowac trójkąt- jeżelki tak określ jaki to jest trójkąt (prostokątny, rozwartokątny czy ostrokątny). Zadanie proszę wykonac bez użycia tablic i list.
 
