@@ -16,7 +16,6 @@ b) 1, 1, 1, 3, 5, 9, 17`
 
 {kod}
 
-Dla wylosowanych trójek licz sprawdź, czy da się z nich zbudowac trójkąt- jeżelki tak określ jaki to jest trójkąt (prostokątny, rozwartokątny czy ostrokątny). Zadanie proszę wykonac bez użycia tablic i list.
-`
+Dla wylosowanych trójek licz sprawdź, czy da się z nich zbudowac trójkąt- jeżelki tak określ jaki to jest trójkąt (prostokątny, rozwartokątny czy ostrokątny). Zadanie proszę wykonac bez użycia tablic i list.`
 
 
